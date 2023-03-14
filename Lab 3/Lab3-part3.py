@@ -1,8 +1,8 @@
-num = input ('Enter Input num')
-print('num')
-
-if num % 2 == 0:
-    print('even')
+num=input('Enter input number')
+print(num)
+sum= int(num)
+if int(sum % 2)== 0:
+    print('This is a even number')
 else:
-    print('odd')
+    print('This is a odd number')
 
