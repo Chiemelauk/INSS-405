@@ -1,22 +1,15 @@
-def temperature():
-   temp = int(input("Enter temperature:"))
-   return temp
+def request():
+   temperature = input("Enter temperature:")
+   print(determine(temperature))
+   return temperature
 
-def determine_temperature(temp):
-   if temp < 30:
+def determine(temperature):
+   if (int(temperature) < 30):
        return "Cold"
-   elif temp < 40:
+   elif (int(temperature) < 40):
        return "Warm"
-   elif temp < 50:
+   elif (int(temperature) < 50):
          return "Hot"
 
-
-def print_temperature(status):
-   print("Temperature is", status)
-
-temp = temperature()
-status = determine_temperature(temp)
-print_temperature(status)
-
-temperature()
+request()
 

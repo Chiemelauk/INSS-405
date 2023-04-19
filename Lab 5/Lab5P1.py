@@ -1,12 +1,12 @@
 def request():
-    number = int(input("Enter a number: "))
-    even(number)
+    number = int(input("Enter variable number: "))
+    print(even(number))
 
-def even(num):
-    if (int(num) %2 == 0):
-        print(even(num))
+def even(number):
+    if (int(number) %2 == 0):
+        return "Even number"
     else:
-        print('Odd number')
+        return 'Odd number'
 
 request()
 

@@ -1,8 +1,8 @@
 def request():
 
-    num1 = int(input("Input number 1: "))
-    num2 = int(input("Input number 2: "))
-    num3 = int(input("Input number 3: "))
+    num1 = int(input("Input variable num1= "))
+    num2 = int(input("Input variable num2= "))
+    num3 = int(input("Input variable num3= "))
     print("Addition =", addition(num1, num2, num3))
     print("Average =", average(num1, num2, num3))
     print("Max =", max(num1, num2, num3))
@@ -16,11 +16,11 @@ def average(num1, num2, num3):
     avg= int(num1) + int(num2) + int(num3) / 3
     return avg
 
-def find_maximum(num1, num2, num3):
+def maximum(num1, num2, num3):
     print(max(num1, num2, num3))
     return max(num1, num2, num3)
 
-def find_minimum(num1, num2, num3):
+def minimum(num1, num2, num3):
     print(min(num1, num2, num3))
     return min(num1,num2, num3)
 
