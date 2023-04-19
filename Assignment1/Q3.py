@@ -1,32 +1,29 @@
 #choose 17 as the number of courses taken by the user
 
-num_courses = 17
-total_score = 0
+subjects = 17
+sum= 0.00
 
 #create a loop of 17 numbers and calculate the total score:
 
-for i in range(17):
-    score = int(input(f"Enter final score for course {i+1}: "))
-    total_score += score
+for i in range(subjects):
+    score = input("Enter final score for course")
+    sum=sum+int(score)
 
 #To perform the average
-average = total_score / num_courses
+average = sum / 17
+print("Total sum=", sum)
+print("Average", average)
 
 #To determine the grades use the if and elif statement:
-if average > 90:
-    grade = "A"
-elif average > 80:
-    grade = "B"
-elif average >= 75 and average <= 79:
-    grade = "C"
-elif average > 60:
-    grade = "D"
+if(int(average) > 90):
+    print("A")
+elif(int(average) > 80):
+    print("B")
+elif(int(average) >= 75 and int(average) <= 79):
+    print("C")
+elif(int(average) > 60) and int(score)<=74:
+    print("D")
 else:
-    grade = "F"
-
-#To perform conditional statement for the functions:
-print(f"Total score: {total_score}")
-print(f"Average score: {average}")
-print(f"Grade: {grade}")
+    print("F")
 
 
